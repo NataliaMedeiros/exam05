@@ -1,0 +1,15 @@
+Bag
+A bag is a collection of elements that:
+- duplicates are allowed
+- order usually does not matter
+ex:
+Bag = {5, 1, 5, 8, 1}
+The bag just stores things.
+It does not prevent duplicates.
+
+Set
+A set is almost the same idea, BUT:
+- duplicates are NOT allowed
+Example:
+Set = {5, 1, 8}
+If you try to insert another 5, nothing changes.
