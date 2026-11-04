@@ -1,0 +1,52 @@
+Assignment name: count_island
+Expected files: *.c, *.hpp
+Allowed functions: open, close, read, write, malloc, free
+
+Write a program that takes a file that contains lines of equal length.
+Those lines contain characters that are either '.' or 'X'.
+All those lines put together form rectangles of '.' containing "islands" of 'X'.
+The maximum size of a line is 1024 characters ,including the terminating
+newline.
+A column is formed of the set of characters in the file that are separated
+from the start of their respective lines by the same number of characters.
+
+Two characters are said to be touching if they are contiguous, and on the
+same line, or on contiguous lines, and on the same column.
+
+An "island" of 'X' means a set of 'X' touching each other.
+
+The program must walk through the file and display it after replacing all
+the 'X' by a number corresponding to the position their islands appears in
+the file, starting at the beginning of the file.
+
+There can be only one result.
+
+If the file is empty, or there is an a error (incoherence input, for example),
+or no parameter are passed, the program must display a newline.
+
+The file contains at most 10 islands.
+You will find in the subject director an example
+
+..xxxx.............
+....xxx...xxxxx....
+..xxxx.....xx...xxx
+....xxx.x.xxxxxxxx.
+........x..........
+xxx.....x..........
+..x.....xxxxx......
+..x...xxxxx........
+x...............xxx
+xx...xxx..........x
+.....xxx...........
+
+..0000.............
+....000...11111....
+..0000.....11...111
+....000.2.11111111.
+........2..........
+333.....2..........
+..3.....22222......
+..3...22222........
+4...............555
+44...666..........5
+.....666...........
